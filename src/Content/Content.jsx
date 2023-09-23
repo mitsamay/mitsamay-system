@@ -221,7 +221,7 @@ const Content = () => {
         <div className="admin">
           <div className="profile">
             <img
-              src="https://images.unsplash.com/photo-1669170023257-4da4bc7adfbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+              src="/src/profile.png"
               alt=""
               className="profile-img"
             />
