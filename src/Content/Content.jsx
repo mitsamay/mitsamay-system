@@ -17,13 +17,12 @@ import {
 
 import {
   AiOutlineUsergroupAdd,
-  AiOutlineLike,
-  AiOutlineUserAdd,
   AiOutlineEdit,
   AiOutlineUserSwitch,
 } from "react-icons/ai";
+import { TbFileUpload } from "react-icons/tb";
 import { FaDribbble, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { IoCashOutline, IoSettingsOutline } from "react-icons/io5";
+import { IoSettingsOutline } from "react-icons/io5";
 import { GiSettingsKnobs } from "react-icons/gi";
 
 import Card from "../Components/CardTemplate/Card";
@@ -44,7 +43,7 @@ const Content = () => {
     <div className={`content ${DarkTheme && "dark"}`}>
       <div className="row header">
         <FiSettings className="cog" />
-        <h1 className="txt-head">Current Notifications</h1>
+        <h1 className="txt-head">ການແຈ້ງເຕືອນ ລ້າສຸດ</h1>
 
         <div className="divider"></div>
 
@@ -76,10 +75,11 @@ const Content = () => {
       </div>
 
       <div className="row header">
-        <Card Icon={AiOutlineUsergroupAdd} title="Followers" value="None :)" />
-        <Card Icon={RiChat3Line} title="Messages" value="+ 0" />
-        <Card Icon={AiOutlineLike} title="Likes" value="+ 0" />
-        <Card Icon={IoCashOutline} title="Earnings" value="$ 0.0" />
+        <Card Icon={AiOutlineUsergroupAdd} title="ຜູ້ນໍາໃຊ້ລະບົບ" value="None :)" />
+        <Card Icon={RiChat3Line} title="ເອກະສານສົ່ງ" value="+ 0" />
+        <Card Icon={RiChat3Line} title="ເອກະສານຮັບ" value="+ 0" />
+        <Card Icon={RiChat3Line} title="ທຸລະກໍາກາງ" value="+ 0" />
+        <Card Icon={TbFileUpload} title="ເກັບສໍານວນ" value="+ 0" />
 
         <svg
           className="bg-waves__"
@@ -120,7 +120,7 @@ const Content = () => {
       </div>
 
       <div className="row square">
-        <Analytics title="New Followers" value="+ 0" illustration={img} />
+        <Analytics title="New User" value="+ 0" illustration={img} />
       </div>
 
       <span className="section-title">Analytic Tools</span>

@@ -24,23 +24,23 @@ const Analytics = ({
   const data = [
     {
       name: "Sept",
-      Earnings: 4000,
-      Followers: 2400,
+      Receive: 4000,
+      Invoice: 2400,
     },
     {
       name: "Oct",
-      Earnings: 3000,
-      Followers: 1398,
+      Receive: 3000,
+      Invoice: 1398,
     },
     {
       name: "Nov",
-      Earnings: 2000,
-      Followers: 9800,
+      Receive: 2000,
+      Invoice: 9800,
     },
     {
       name: "Dec",
-      Earnings: 2780,
-      Followers: 3908,
+      Receive: 2780,
+      Invoice: 3908,
     },
   ];
   const data02 = [
@@ -123,8 +123,8 @@ const Analytics = ({
       {chart_i && (
         <>
           <header>
-            <span className="followers">Subcribers:</span>
-            <span className="earnings">Earnings:</span>
+            <span className="Invoice">ຮັບຄໍາຮ້ອງເຂົ້າ:</span>
+            <span className="Receive">ແຈກຍາຍໃບຕາດິນ:</span>
           </header>
 
           <BarChart className="chart" width={250} height={210} data={data}>
@@ -132,8 +132,8 @@ const Analytics = ({
             <XAxis dataKey="name" />
             <Tooltip />
             <Legend />
-            <Bar dataKey="Followers" fill="#00464e" />
-            <Bar dataKey="Earnings" fill="#810551" />
+            <Bar dataKey="Invoice" fill="#00464e" />
+            <Bar dataKey="Receive" fill="#810551" />
           </BarChart>
         </>
       )}

@@ -14,10 +14,10 @@
   font-weight: bold;
 }
 
-.analytics header .followers {
+.analytics header .Invoice {
   color: #00464e;
 }
-.analytics header .earnings {
+.analytics header .Receive {
   color: #810551;
 }
 

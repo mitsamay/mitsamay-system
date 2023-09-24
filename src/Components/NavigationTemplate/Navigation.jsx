@@ -6,12 +6,10 @@ import { TbDashboard, TbFileUpload } from "react-icons/tb";
 import { VscGraphLine } from "react-icons/vsc";
 import {
   AiOutlineUsergroupAdd,
-  AiOutlineDollarCircle,
   AiOutlineUserSwitch,
 } from "react-icons/ai";
 import { MdOutlineNotificationsActive, MdSwapHoriz } from "react-icons/md";
-import { RiAccountCircleLine } from "react-icons/ri";
-import { BiMessageAltAdd, BiDotsHorizontalRounded } from "react-icons/bi";
+import { BiMessageAltAdd } from "react-icons/bi";
 import { useContext, useState } from "react";
 import { ThemeContext } from "../../ThemeContext";
 
@@ -43,22 +41,22 @@ const Navigation = () => {
             className="profile-img"
           />
         </div>
-        <span>Mitsamay</span>
+        <span>Mitsamay Keotheuankham</span>
       </header>
-
+      
       <Nav Icon={TbDashboard} title={"Dashboard"} />
-      <Nav Icon={VscGraphLine} title={"Analytics"} />
-      <Nav Icon={FiMessageSquare} title={"Messages"} />
-      <Nav Icon={AiOutlineUsergroupAdd} title={"Followers"} />
+      <Nav Icon={BiMessageAltAdd} title={"ເພີ້ມຄໍາຮ້ອງ"} />
+      <Nav Icon={FiMessageSquare} title={"ເອກະສານສົ່ງ"} />
+      <Nav Icon={FiMessageSquare} title={"ເອກະສານຮັບ"} />
+      <Nav Icon={FiMessageSquare} title={"ເອກະສານທຸລະກໍາກາງ"} />
+      <Nav Icon={TbFileUpload} title={"ເກັບສໍານວນເອກະສານ (Finish)"} />
 
       <div className="divider"></div>
-
-      <Nav Icon={MdOutlineNotificationsActive} title={"Notifications"} />
-      <Nav Icon={RiAccountCircleLine} title={"Following"} />
-      <Nav Icon={AiOutlineDollarCircle} title={"Earnings"} />
-      <Nav Icon={TbFileUpload} title={"Posts"} />
-      <Nav Icon={BiMessageAltAdd} title={"Message Requests"} />
-      <Nav Icon={AiOutlineUserSwitch} title={"Change Account"} />
+      <Nav Icon={AiOutlineUsergroupAdd} title={"ເພີ້ມຜູ້ນໍາໃຊ້ລະບົບ"} />
+      <Nav Icon={AiOutlineUserSwitch} title={"ການຈັດການສິດ"} />
+      <Nav Icon={MdOutlineNotificationsActive} title={"ການແຈ້ງເຕືອນ"} />
+      <Nav Icon={VscGraphLine} title={"ການລາຍງານ"} />
+      
 
       <div className="divider"></div>
 
@@ -69,7 +67,6 @@ const Navigation = () => {
         }`}
         onClick={changeTheme}
       />
-      <Nav Icon={BiDotsHorizontalRounded} title={"More details"} />
 
       <svg
         className="bg-waves"
