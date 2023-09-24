@@ -124,7 +124,7 @@ const Analytics = ({
         <>
           <header>
             <span className="Invoice">ຮັບຄໍາຮ້ອງເຂົ້າ:</span>
-            <span className="Receive">ແຈກຍາຍໃບຕາດິນ:</span>
+            <span className="Receive">ສໍາເລັດສົມບູນ:</span>
           </header>
 
           <BarChart className="chart" width={250} height={210} data={data}>

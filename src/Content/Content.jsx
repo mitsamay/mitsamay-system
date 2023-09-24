@@ -105,7 +105,7 @@ const Content = () => {
         </svg>
       </div>
 
-      <span className="section-title">Brief Overview</span>
+      <span className="section-title">ພາບລວມໂດຍຫຍໍ້ Brief Overview</span>
 
       <div className="row square">
         <Analytics chart_i />
@@ -123,7 +123,7 @@ const Content = () => {
         <Analytics title="New User" value="+ 0" illustration={img} />
       </div>
 
-      <span className="section-title">Analytic Tools</span>
+      <span className="section-title">ເຄື່ອງມືວິເຄາະ Analytic Tools</span>
 
       <div className="row tall-square">
         <svg
@@ -144,7 +144,7 @@ const Content = () => {
           <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
         </svg>
 
-        <span className="tools-section">Frequently Used</span>
+        <span className="tools-section">ເຄື່ອງມືຫຼັກ Frequently Used</span>
 
         <div className="tools">
           <Card Icon={RiToolsLine} />
@@ -157,7 +157,7 @@ const Content = () => {
 
         <div className="divider"></div>
 
-        <span className="tools-section">More Tools</span>
+        <span className="tools-section">ເຄື່ອງມືເພີ້ມເຕີມ More Tools</span>
 
         <div className="tools">
           <Card Icon={RiUserSettingsLine} />
@@ -173,7 +173,7 @@ const Content = () => {
 
         <div className="divider"></div>
 
-        <span className="tools-section">Advanced Tools</span>
+        <span className="tools-section">ເຄື່ອງມືຂັ້ນສູງ Advanced Tools</span>
 
         <div className="tools">
           <Card Icon={RiFolderSettingsFill} />
@@ -228,7 +228,7 @@ const Content = () => {
           </div>
 
           <div className="info">
-            <h2 className="admin-name">creative ambition</h2>
+            <h2 className="admin-name">Mitsamay Keotheuankham</h2>
             <span className="admin-about">Full-Stack & Content Creator</span>
           </div>
 
@@ -250,11 +250,9 @@ const Content = () => {
           />
 
           <div className="summary">
-            <h2 className="summary-title">Performance</h2>
+            <h2 className="summary-title">ຜົນການປະຕິບັດງານ Performance</h2>
             <span className="summary-info">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
-              assumenda repudiandae aspernatur nemo mollitia, at ab cupiditate
-              non nam. Officiis.
+              ຄາວມສໍາເລັດໃນການປະຕິບັດງານຂອງຜູ້ນໍາໃຊ້ລະບົບ ສົມທຽບໃສ່ການຮັບຄໍາຮ້ອງຂໍເຄື່ອນໄຫວທີ່ດິນ ແລະ ການແຈກຍາຍໃບຕາດິນ
             </span>
           </div>
 
@@ -275,11 +273,9 @@ const Content = () => {
           />
 
           <div className="more-details">
-            <h1 className="title">Detailed Analysis</h1>
+            <h1 className="title">ການຮັບຄໍາຮ້ອງ Invoice Analysis</h1>
             <span className="txt">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Repellendus consectetur dolore ea temporibus ducimus officiis hic
-              ipsa reiciendis.
+              ເປີເຊັນ ການຮັບຄໍາຮ້ອງຂໍເຄື່ອນໄຫວທີ່ດິນ ທີ່ຍັງດໍາເນີນການພາຍໃນລະບົບ.
             </span>
           </div>
         </section>
@@ -293,11 +289,9 @@ const Content = () => {
           />
 
           <div className="more-details">
-            <h1 className="title">Detailed Analysis</h1>
+            <h1 className="title">ການແຈກຍາຍເອກະສານ Receive Analysis</h1>
             <span className="txt">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Repellendus consectetur dolore ea temporibus ducimus officiis hic
-              ipsa reiciendis.
+              ເປີເຊັນ ການສໍາເລັດການແຈກຍາຍເອກະສານທີ່ດິນ ທີ່ສົມບູນພາຍໃນລະບົບ.
             </span>
           </div>
         </section>
