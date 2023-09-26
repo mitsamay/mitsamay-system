@@ -10,6 +10,8 @@ import { IoAnalytics } from "react-icons/io5";
 import { TbMessages } from "react-icons/tb";
 
 import { HiOutlineMoon, HiOutlineLogout } from "react-icons/hi";
+import { signOut } from "firebase/auth";
+import { auth } from "../../Firebase";
 
 const Header = () => {
   const { DarkTheme, setDarkTheme } = useContext(ThemeContext);
@@ -17,6 +19,11 @@ const Header = () => {
   function changeTheme() {
     setDarkTheme(!DarkTheme);
   }
+
+  const logout = () => {
+    signOut(auth);
+  };
+
   return (
     <header className={`${DarkTheme && "dark"}`}>
       <div className="search-bar">
@@ -33,16 +40,12 @@ const Header = () => {
 
         <HiOutlineMoon className="icon" onClick={changeTheme} />
         <RiSettingsLine className="icon" />
-        <HiOutlineLogout className="icon" />
+        <HiOutlineLogout className="icon" onClick={logout} />
 
         <div className="divider"></div>
 
         <div className="user">
-          <img
-            src="/src/profile.png"
-            alt=""
-            className="profile-img"
-          />
+          <img src="/src/profile.png" alt="" className="profile-img" />
         </div>
       </div>
     </header>

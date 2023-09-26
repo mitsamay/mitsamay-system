@@ -184,7 +184,7 @@ const Analytics = ({
           <h1 className="title">{title}</h1>
           <h2 className="value">{value}</h2>
           <h2 className="extra-text">
-            People are loving your content
+            ຈໍານວນຜູ້ນໍາໃຊ້ ທີ່ເພີ້ມເຂົ້າມາໃໝ່
             <br />
             🙌🎉🎆
           </h2>
