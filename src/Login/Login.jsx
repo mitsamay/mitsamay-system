@@ -1,5 +1,5 @@
-import "./Login.css";
-import infinity from "../assets/infinity.png";
+import "./Login.scss";
+import logo from "../assets/logo.png";
 import { useState } from "react";
 import warning from "../assets/warning.png";
 
@@ -8,11 +8,11 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "firebase/auth";
+import { motion as m } from "framer-motion";
 
 const Login = () => {
-  
   const [username, setusername] = useState(true);
-  
+
   const [NewUser, setNewUser] = useState("");
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
@@ -44,19 +44,59 @@ const Login = () => {
   };
 
   return (
-    <div className="login-page">
-      <header>
+    <m.div
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="login-page"
+    >
+      <m.header
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.5 }}
+      >
         <span>
           from <i>Mitsamay Keotheuankham</i>
         </span>
-      </header>
+      </m.header>
 
-      <img className="logo" src={infinity} alt="" />
+      <m.img
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 2,
+          ease: [0, 0.71, 0.2, 1.01],
+          scale: {
+            type: "spring",
+            damping: 5,
+            stiffness: 100,
+            restDelta: 0.001,
+          },
+        }}
+        className="logo"
+        src={logo}
+        alt=""
+      />
 
-      <h2 className="title">
-        Mitsamay <br />
-        System Dashboard
-      </h2>
+      <m.h2
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 3,
+          ease: [0, 0.71, 0.2, 1.01],
+          scale: {
+            type: "spring",
+            damping: 5,
+            stiffness: 100,
+            restDelta: 0.001,
+          },
+        }}
+        className="title"
+      >
+        Lands
+        <br />
+        Information System
+      </m.h2>
 
       <form onSubmit={submit}>
         {NewUser && (
@@ -98,11 +138,17 @@ const Login = () => {
         {error && <span className="error">Process Failed</span>}
         {error && <span className="error">{ErrorMsg}</span>}
 
-        <button type="submit">{NewUser ? "Sign Up" : "Log In"}</button>
+        <m.button
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          type="submit"
+        >
+          {NewUser ? "Sign Up" : "Log In"}
+        </m.button>
 
         {NewUser ? (
           <span className="user-stat">
-            Already have an account?{" "}
+            Already have an account? {" "}
             <b
               onClick={() => {
                 setNewUser(false);
@@ -114,7 +160,7 @@ const Login = () => {
           </span>
         ) : (
           <span className="user-stat">
-            Don't have an account?{" "}
+            Do not have an account? {" "}
             <b
               onClick={() => {
                 setNewUser(true);
@@ -126,7 +172,7 @@ const Login = () => {
           </span>
         )}
       </form>
-    </div>
+    </m.div>
   );
 };
 
